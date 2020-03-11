@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/m10sideBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_dice10"
+        android:fontFamily="@font/open_sans_condensed_light"
+        android:text="10-sided Dices"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/m8sideBtn"
+        app:layout_constraintStart_toStartOf="@+id/m8sideBtn"
+        app:layout_constraintTop_toBottomOf="@+id/m8sideBtn" />
+
+    <Button
+        android:id="@+id/m12sideBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_dice12"
+        android:fontFamily="@font/open_sans_condensed_light"
+        android:text="12-sided Dices"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/m10sideBtn"
+        app:layout_constraintStart_toStartOf="@+id/m10sideBtn"
+        app:layout_constraintTop_toBottomOf="@+id/m10sideBtn" />
+
+    <Button
+        android:id="@+id/m8sideBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_dice8"
+        android:fontFamily="@font/open_sans_condensed_light"
+        android:text="8-sided Dices"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/m6sideBtn"
+        app:layout_constraintStart_toStartOf="@+id/m6sideBtn"
+        app:layout_constraintTop_toBottomOf="@+id/m6sideBtn" />
+
+    <Button
+        android:id="@+id/m20sideBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_dice20"
+        android:fontFamily="@font/open_sans_condensed_light"
+        android:text="20-sided Dices"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/m12sideBtn"
+        app:layout_constraintStart_toStartOf="@+id/m12sideBtn"
+        app:layout_constraintTop_toBottomOf="@+id/m12sideBtn" />
+
+    <Button
+        android:id="@+id/m6sideBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_dice6"
+        android:fontFamily="@font/open_sans_condensed_light"
+        android:text="6-sided Dices"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/m4sideBtn"
+        app:layout_constraintStart_toStartOf="@+id/m4sideBtn"
+        app:layout_constraintTop_toBottomOf="@+id/m4sideBtn" />
+
+    <Button
+        android:id="@+id/m4sideBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gradient_dice4"
+        android:fontFamily="@font/open_sans_condensed_light"
+        android:text="4-sided Dices"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/diceTitle"
+        app:layout_constraintStart_toStartOf="@+id/diceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/diceTitle" />
+
+    <TextView
+        android:id="@+id/diceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:gravity="center"
+        android:text="Choose Your Dices!"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
